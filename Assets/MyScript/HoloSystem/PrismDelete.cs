@@ -25,6 +25,7 @@ public class PrismDelete : MonoBehaviour
 		Invoke("EffectOff", 5f);
 	}
 
+	//ミニチュアモデルセット時エフェクト(使いまわし)
 	public void EffectOn()
 	{
 		Effect.SetActive(true);

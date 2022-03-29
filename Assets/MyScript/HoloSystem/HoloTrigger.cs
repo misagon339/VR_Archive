@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//ミニチュアモデルセット検知処理
 public class HoloTrigger : MonoBehaviour
 {
 	// Start is called before the first frame update

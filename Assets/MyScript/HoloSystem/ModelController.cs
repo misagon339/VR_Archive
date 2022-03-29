@@ -5,6 +5,7 @@ using UnityEngine;
 using static AudioController;
 using static SoundController;
 
+//モデル表示関連処理
 public class ModelController : MonoBehaviour
 {
 	// Start is called before the first frame update
@@ -76,6 +77,7 @@ public class ModelController : MonoBehaviour
 
 	}
 
+	//モデルの表示処理
 	public void ModelActivate(string prismname)
 	{
 		SECon.PlaySound((int)SEType.Generate);

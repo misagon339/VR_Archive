@@ -55,6 +55,7 @@ public class CoreRelease : MonoBehaviour
 
 	}
 
+	//拡張モード時ミニチュアモデル読み込み機移動アニメーション
 	public void CoreRecollection()
 	{
 		if (!isAnimation)
@@ -62,8 +63,6 @@ public class CoreRelease : MonoBehaviour
 			isAnimation = true;
 			audioController.PlaySound((int)AudioController.State.Release);
 			BoxAnim.SetBool("ON", true);
-			//PrismAnim.SetBool("ON", true);
-			//Tween tween = transform.DOMove(CenterPos.position, 5f);
 			Sequence seq = DOTween.Sequence();
 			seq.Append(transform.DOMove(CenterPos.position, 5f));
 			seq.Join(transform.DORotate(new Vector3(0, 360, 0), 5f, RotateMode.LocalAxisAdd));
@@ -81,6 +80,7 @@ public class CoreRelease : MonoBehaviour
 		}
 	}
 
+	//チュートリアル終了時ミニチュアモデル読み込み機移動アニメーション関連処理
 	public void CoreStart()
 	{
 		if (!isAnimation)
@@ -106,6 +106,7 @@ public class CoreRelease : MonoBehaviour
 		}
 	}
 
+	//システム終了時
 	public void CoreShutDown()
 	{
 		if (!isShutDown)
